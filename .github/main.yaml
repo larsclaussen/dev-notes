@@ -23,7 +23,7 @@ jobs:
         if [ -f requirements_actions.txt ]; then pip install -r requirements_actions.txt; fi
         pip install .
     - name: Build site
-      run: mkdocs build --clean
+      run: mkdocs build --clean --site-dir public
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
