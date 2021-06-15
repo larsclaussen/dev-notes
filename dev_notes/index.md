@@ -1,3 +1,3 @@
 # Development Notes
 
-Personal notes about software development.
+Personal notes about software development. Action!
