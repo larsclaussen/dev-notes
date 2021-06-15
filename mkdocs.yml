@@ -1,0 +1,43 @@
+site_name: Softwarre Developemnt Notes
+
+nav:
+    - Overview: 'index.md'
+    - Ubuntu: 'ubuntu.md'
+    - Git: 'git.md'
+    - Python: 'py.md'
+    - Network: 'network.md'
+    - Fish and Shell: 'fish.md'
+    - Docker: 'docker.md'
+    - Mount: 'mnt.md'
+    - Databases: 'databases.md'
+
+
+
+
+theme:
+    name: material
+    features:
+        - navigation.expand
+    palette:
+        primary: 'cyan'
+        accent: 'amber'
+
+repo_name: dev-notes
+repo_url:
+docs_dir: dev_notes
+
+
+markdown_extensions:
+    - toc:
+        permalink: 💡
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - admonition
+    - attr_list
+
+extra_css:
+    - 'css/custom.css'
+
