@@ -3,16 +3,7 @@ dev-notes
 =========
 
 
-.. image:: https://img.shields.io/pypi/v/dev_notes.svg
-        :target: https://pypi.python.org/pypi/dev_notes
-
-.. image:: https://img.shields.io/travis/larsclaussen/dev_notes.svg
-        :target: https://travis-ci.com/larsclaussen/dev_notes
-
-.. image:: https://readthedocs.org/projects/dev-notes/badge/?version=latest
-        :target: https://dev-notes.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/82f33bd3-dc66-4609-a350-3e4bb623add9/deploy-status)](https://app.netlify.com/sites/larsegasdevnotes/deploys)
 
 
 
