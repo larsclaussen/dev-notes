@@ -2,8 +2,8 @@
 dev-notes
 =========
 
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/82f33bd3-dc66-4609-a350-3e4bb623add9/deploy-status)](https://app.netlify.com/sites/larsegasdevnotes/deploys)
+.. image:: https://api.netlify.com/api/v1/badges/82f33bd3-dc66-4609-a350-3e4bb623add9/deploy-status
+    :target: https://app.netlify.com/sites/larsegasdevnotes/deploys
 
 
 
