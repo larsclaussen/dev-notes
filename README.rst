@@ -12,7 +12,7 @@ Personal notes about software development.
 
 Created with mkdocs. Publish through netlify. 
 
-🚨 https://larsegasdevnotes.netlify.app/
+🔗 https://larsegasdevnotes.netlify.app/
 
 Credits
 -------
