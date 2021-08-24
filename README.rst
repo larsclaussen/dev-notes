@@ -10,9 +10,11 @@ dev-notes
 Personal notes about software development. 
 
 
-Created with mkdocs. Publish through netlify. 
+Created with mkdocs. Published through netlify. 
+
 
 🔗 https://larsegasdevnotes.netlify.app/
+
 
 Credits
 -------
