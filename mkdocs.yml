@@ -1,4 +1,4 @@
-site_name: Softwarre Developemnt Notes
+site_name: Software Development Notes
 
 nav:
     - Overview: 'index.md'
