@@ -7,17 +7,14 @@ dev-notes
 
 
 
-Personal notes about software development
+Personal notes about software development. 
 
 
-* Free software: MIT license
-* Documentation: https://dev-notes.readthedocs.io.
+Created with mkdocs. Published through netlify. 
 
 
-Features
---------
+🔗 https://larsegasdevnotes.netlify.app/
 
-* TODO
 
 Credits
 -------
