@@ -2,7 +2,7 @@
 
 ## apt
 
-Upgrade a single package, bv fish
+Upgrade a single package, e.g. fish
 
 ```shell
 apt --only-upgrade install fish

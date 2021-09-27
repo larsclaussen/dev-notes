@@ -34,3 +34,15 @@ function ipython
     command ipython --profile=rich_profile $argv;
 end
 ```
+
+
+## Resources
+
+### subclassing
+
+Blog post by [Hynek Schlawack](https://hynek.me/articles/python-subclassing-redux/).
+
+### type hints
+
+
+Blog post by [Adam Johnson](https://adamj.eu/tech/2021/05/29/python-type-hints-how-to-use-overload/)  on how to use the **overload decorator**.

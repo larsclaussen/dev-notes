@@ -8,8 +8,8 @@ nav:
     - Network: 'network.md'
     - Fish and Shell: 'fish.md'
     - Docker: 'docker.md'
-    - Mount: 'mnt.md'
-    - Databases: 'databases.md'
+    - API's: 'apis.md'
+    # - Databases: 'databases.md'
 
 
 
