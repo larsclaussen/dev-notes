@@ -1,6 +1,4 @@
-# Fish and Shell
-
-## Fish
+## History 
 
 Get commands from current session in all terminals
 
@@ -35,24 +33,3 @@ To show a greeting upon startup for instance, add
 set -g -x fish_greeting 'kau i ka nalu'
 ```
 
-
-## Shell
-
-### `which` vs `type`
-
-- `which`
-  - finds executable in your `$PATH`
-  - lives in /usr/bin/which
-
-- `type`
-  - determines if command is alias, function, built-in command, cached executable (hashed), binary in `$PATH`, etc
-  - shell builtin
-
-
-### Users
-
-Find user name belonging to user ID
-
-```shell
-id -un <ID>
-```

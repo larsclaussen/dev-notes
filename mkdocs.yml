@@ -6,7 +6,8 @@ nav:
     - Git: 'git.md'
     - Python: 'py.md'
     - Network: 'network.md'
-    - Fish and Shell: 'fish.md'
+    - Fish: 'fish.md'
+    - Shell: 'shell.md'
     - Docker: 'docker.md'
     - API's: 'apis.md'
     # - Databases: 'databases.md'
@@ -16,8 +17,16 @@ nav:
 
 theme:
     name: material
+    icon:
+        logo: material/reminder
+    # :material-reminder:
+    # logo: assets/rice_48.png
+    favicon: ./images/ic_reminder_black_18dp.png
     features:
-        - navigation.expand
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
     palette:
         primary: 'cyan'
         accent: 'amber'
