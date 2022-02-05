@@ -27,3 +27,18 @@ If you want your additional entries to be written to the top of the `resolv.conf
 sudo vim /etc/resolvconf/resolv.conf.d/head
 ```
 
+## Ports 
+
+Find listening ports on local machine 
+
+```shell
+lsof -i -P -n | grep LISTEN
+```
+
+Argument | Description
+--------- | ----------- 
+-i | select IPv[46] files 
+-P | no port names 
+-n | no host names
+
+

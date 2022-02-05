@@ -33,9 +33,8 @@ Remove unused containers, networks, images etc
 ```shell
 docker system prune
 ```
-### Resources
 
-:octicons-link-external-16:  [Official Docker reference](https://docs.docker.com/engine/reference/commandline/system_prune/)
+:octicons-link-external-16:  [Official Docker system prune reference](https://docs.docker.com/engine/reference/commandline/system_prune/)
 
 ## docker-compose
 
@@ -47,3 +46,7 @@ docker-compose run --rm -p 8000:8000 --name web web python manage.py runserver 0
 ```
 
 
+
+### Resources
+
+:octicons-link-external-16:  [Jérôme Petazzoni on docker build patterns](github.io/2021/11/30/docker-build-container-images-antipatterns/)
