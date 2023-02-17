@@ -7,13 +7,13 @@ dev-notes
 
 
 
-Personal notes about software development. 
+Personal notes about software development.
 
 
-Created with mkdocs. Published through netlify. 
+Created with mkdocs. Published through netlify.
 
 
-🔗 https://larsegasdevnotes.netlify.app/
+🔗 https://larsvegasdevnotes.netlify.app/
 
 
 Credits
