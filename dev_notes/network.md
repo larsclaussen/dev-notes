@@ -34,16 +34,17 @@ Get the name of the wlan you're connected to.
 ```shell
 iwgetid -r
 ```
-## Ports 
 
-Find listening ports on local machine 
+## Ports
+
+Find listening ports on local machine
 
 ```shell
 lsof -i -P -n | grep LISTEN
 ```
 
 Argument | Description
---------- | ----------- 
--i | select IPv[46] files 
--P | no port names 
+--------- | -----------
+-i | select IPv[46] files
+-P | no port names
 -n | no host names
