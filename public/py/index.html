@@ -2,432 +2,769 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
-    
+
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
-    
-    
-      
-        <title>Python - Softwarre Developemnt Notes</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.6f955dcd.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#00bdd6">
-        
-      
-    
-    
-    
-      
-        
+
+
+
+
+        <link rel="prev" href="../git/">
+
+
+        <link rel="next" href="../network/">
+
+
+      <link rel="icon" href="../images/ic_reminder_black_18dp.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+
+
+
+        <title>Python - Software Development Notes</title>
+
+
+
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+
+
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-      
-    
-    
-    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+
+
+
       <link rel="stylesheet" href="../css/custom.css">
-    
-    
-      
-    
-    
+
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+
+
+
+
   </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="amber">
-  
-    
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
+
+
+
+
+
+
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="amber">
+
+
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
+
+
         <a href="#ipython" class="md-skip">
           Skip to content
         </a>
-      
+
     </div>
     <div data-md-component="announce">
-      
+
     </div>
-    
-      <header class="md-header" data-md-component="header">
+
+
+
+
+
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Softwarre Developemnt Notes" class="md-header__button md-logo" aria-label="Softwarre Developemnt Notes" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+    <a href=".." title="Software Development Notes" class="md-header__button md-logo" aria-label="Software Development Notes" data-md-component="logo">
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25 3c.65 0 1.25.21 1.75.56V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.57c.5-.35 1.1-.57 1.75-.57a3 3 0 0 1 3 3c0 1.58-1.21 2.87-2.75 3h-2v1h1.24l.48.13 4.59 2.29c.82.31 1.22.92 1.22 1.83l-.03.14v.14l-1 6.75c-.06.47-.28.88-.66 1.22-.37.34-.79.5-1.26.5H10c-.55 0-1-.19-1.42-.59L2 15.84l1.05-1.07c.28-.27.64-.43 1.08-.43h.32l4.55.99V9H7a3.02 3.02 0 0 1-2.75-3 3 3 0 0 1 3-3M9 6a1.75 1.75 0 0 0-1.75-1.75A1.75 1.75 0 0 0 5.5 6c0 .88.65 1.61 1.5 1.73v.02h2zm6 1.75v-.01c.85-.12 1.5-.85 1.5-1.74 0-.96-.78-1.74-1.75-1.74S13 5.04 13 6v1.75z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Softwarre Developemnt Notes
+            Software Development Notes
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
-            
+
               Python
-            
+
           </span>
         </div>
       </div>
     </div>
-    
-    
-    
+
+
+
+
+
+
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
   </div>
 </div>
-    
-    
+
+
   </nav>
+
+
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+
+
+
+
+  Overview
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../ubuntu/" class="md-tabs__link">
+
+
+
+
+  Ubuntu
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../git/" class="md-tabs__link">
+
+
+
+
+  Git
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+
+
+
+
+  Python
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../network/" class="md-tabs__link">
+
+
+
+
+  Network
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../fish/" class="md-tabs__link">
+
+
+
+
+  Fish
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../shell/" class="md-tabs__link">
+
+
+
+
+  Shell
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../docker/" class="md-tabs__link">
+
+
+
+
+  Docker
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../apis/" class="md-tabs__link">
+
+
+
+
+  API's
+
+      </a>
+    </li>
+
+
+
+    </ul>
+  </div>
+</nav>
+
+
 </header>
-    
+
     <div class="md-container" data-md-component="container">
-      
-      
-        
-      
+
+
+
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
-          
-            
-              
+
+
+
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Softwarre Developemnt Notes" class="md-nav__button md-logo" aria-label="Softwarre Developemnt Notes" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+    <a href=".." title="Software Development Notes" class="md-nav__button md-logo" aria-label="Software Development Notes" data-md-component="logo">
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25 3c.65 0 1.25.21 1.75.56V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.57c.5-.35 1.1-.57 1.75-.57a3 3 0 0 1 3 3c0 1.58-1.21 2.87-2.75 3h-2v1h1.24l.48.13 4.59 2.29c.82.31 1.22.92 1.22 1.83l-.03.14v.14l-1 6.75c-.06.47-.28.88-.66 1.22-.37.34-.79.5-1.26.5H10c-.55 0-1-.19-1.42-.59L2 15.84l1.05-1.07c.28-.27.64-.43 1.08-.43h.32l4.55.99V9H7a3.02 3.02 0 0 1-2.75-3 3 3 0 0 1 3-3M9 6a1.75 1.75 0 0 0-1.75-1.75A1.75 1.75 0 0 0 5.5 6c0 .88.65 1.61 1.5 1.73v.02h2zm6 1.75v-.01c.85-.12 1.5-.85 1.5-1.74 0-.96-.78-1.74-1.75-1.74S13 5.04 13 6v1.75z"/></svg>
 
     </a>
-    Softwarre Developemnt Notes
+    Software Development Notes
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
 
-  
-  
-  
+  <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Overview
+
+
+  <span class="md-ellipsis">
+    Overview
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href="../ubuntu/" class="md-nav__link">
-        Ubuntu
+
+
+  <span class="md-ellipsis">
+    Ubuntu
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../git.md" class="md-nav__link">
-        Git
+      <a href="../git/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Git
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-    
-  
-  
+
+
+
+
+
+
+
+
+
     <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
+
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+
+
+
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Python
+
+
+  <span class="md-ellipsis">
+    Python
+
+  </span>
+
+
           <span class="md-nav__icon md-icon"></span>
         </label>
-      
+
       <a href="./" class="md-nav__link md-nav__link--active">
-        Python
+
+
+  <span class="md-ellipsis">
+    Python
+
+  </span>
+
+
       </a>
-      
-        
+
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
+
+
+
+
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
+
         <li class="md-nav__item">
   <a href="#ipython" class="md-nav__link">
-    ipython
+    <span class="md-ellipsis">
+      ipython
+    </span>
   </a>
-  
+
     <nav class="md-nav" aria-label="ipython">
       <ul class="md-nav__list">
-        
+
           <li class="md-nav__item">
   <a href="#enabling-rich" class="md-nav__link">
-    Enabling rich
+    <span class="md-ellipsis">
+      Enabling rich
+    </span>
   </a>
-  
+
 </li>
-        
+
           <li class="md-nav__item">
   <a href="#starting-with-a-specific-profile" class="md-nav__link">
-    Starting with a specific profile
+    <span class="md-ellipsis">
+      Starting with a specific profile
+    </span>
   </a>
-  
+
 </li>
-        
+
       </ul>
     </nav>
-  
+
 </li>
-      
+
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+
+          <li class="md-nav__item">
+  <a href="#subclassing" class="md-nav__link">
+    <span class="md-ellipsis">
+      subclassing
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      type hints
+    </span>
+  </a>
+
+</li>
+
+      </ul>
+    </nav>
+
+</li>
+
     </ul>
-  
+
 </nav>
-      
+
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href="../network/" class="md-nav__link">
-        Network
+
+
+  <span class="md-ellipsis">
+    Network
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href="../fish/" class="md-nav__link">
-        Fish and Shell
+
+
+  <span class="md-ellipsis">
+    Fish
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../docker.md" class="md-nav__link">
-        Docker
+      <a href="../shell/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Shell
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../mnt.md" class="md-nav__link">
-        Mount
+      <a href="../docker/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Docker
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../databases.md" class="md-nav__link">
-        Databases
+      <a href="../apis/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    API's
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
+
+
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
-            
-            
-              
+
+
+
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
+
+
+
+
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
+
         <li class="md-nav__item">
   <a href="#ipython" class="md-nav__link">
-    ipython
+    <span class="md-ellipsis">
+      ipython
+    </span>
   </a>
-  
+
     <nav class="md-nav" aria-label="ipython">
       <ul class="md-nav__list">
-        
+
           <li class="md-nav__item">
   <a href="#enabling-rich" class="md-nav__link">
-    Enabling rich
+    <span class="md-ellipsis">
+      Enabling rich
+    </span>
   </a>
-  
+
 </li>
-        
+
           <li class="md-nav__item">
   <a href="#starting-with-a-specific-profile" class="md-nav__link">
-    Starting with a specific profile
+    <span class="md-ellipsis">
+      Starting with a specific profile
+    </span>
   </a>
-  
+
 </li>
-        
+
       </ul>
     </nav>
-  
+
 </li>
-      
+
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+
+          <li class="md-nav__item">
+  <a href="#subclassing" class="md-nav__link">
+    <span class="md-ellipsis">
+      subclassing
+    </span>
+  </a>
+
+</li>
+
+          <li class="md-nav__item">
+  <a href="#type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      type hints
+    </span>
+  </a>
+
+</li>
+
+      </ul>
+    </nav>
+
+</li>
+
     </ul>
-  
+
 </nav>
                   </div>
                 </div>
               </div>
-            
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>Python</h1>
-                
-                <h2 id="ipython">ipython<a class="headerlink" href="#ipython" title="Permanent link">💡</a></h2>
-<div class="highlight"><pre><span></span><code>ipython profile create &lt;profile name&gt;
+
+
+
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+
+
+
+
+
+  <h1>Python</h1>
+
+<h2 id="ipython">ipython<a class="headerlink" href="#ipython" title="Permanent link">🔖</a></h2>
+<div class="highlight"><pre><span></span><code>ipython<span class="w"> </span>profile<span class="w"> </span>create<span class="w"> </span>&lt;profile<span class="w"> </span>name&gt;
 </code></pre></div>
 <p>Usually gets created as <code>~/.ipython/profile_&lt;profile name&gt;/ipython_config.py</code></p>
-<h3 id="enabling-rich">Enabling rich<a class="headerlink" href="#enabling-rich" title="Permanent link">💡</a></h3>
+<h3 id="enabling-rich">Enabling rich<a class="headerlink" href="#enabling-rich" title="Permanent link">🔖</a></h3>
 <p>Add the following to <code>~/.ipython/profile_rich_profile/ipython_config.py</code></p>
 <div class="highlight"><pre><span></span><code><span class="c1">## lines of code to run at IPython startup.</span>
 <span class="n">c</span><span class="o">.</span><span class="n">InteractiveShellApp</span><span class="o">.</span><span class="n">exec_lines</span> <span class="o">=</span> <span class="p">[</span>
@@ -437,87 +774,70 @@
         <span class="s1">&#39;_ = traceback.install()&#39;</span><span class="p">,</span>
 <span class="p">]</span>
 </code></pre></div>
-<h3 id="starting-with-a-specific-profile">Starting with a specific profile<a class="headerlink" href="#starting-with-a-specific-profile" title="Permanent link">💡</a></h3>
+<h3 id="starting-with-a-specific-profile">Starting with a specific profile<a class="headerlink" href="#starting-with-a-specific-profile" title="Permanent link">🔖</a></h3>
 <p>Make ipython an fish alias</p>
-<div class="highlight"><pre><span></span><code>ipython is a <span class="k">function</span> with definition
+<div class="highlight"><pre><span></span><code>ipython<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span><span class="k">function</span><span class="w"> </span>with<span class="w"> </span>definition
 <span class="c1"># Defined in ~/.config/fish/functions/ipython.fish @ line 1</span>
-<span class="k">function</span> ipython
-    <span class="nb">command</span> ipython --profile<span class="o">=</span>rich_profile <span class="nv">$argv</span><span class="p">;</span>
+<span class="k">function</span><span class="w"> </span>ipython
+<span class="w">    </span><span class="nb">command</span><span class="w"> </span>ipython<span class="w"> </span>--profile<span class="o">=</span>rich_profile<span class="w"> </span><span class="nv">$argv</span><span class="p">;</span>
 end
 </code></pre></div>
-                
-              
-              
-                
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">🔖</a></h2>
+<h3 id="subclassing">subclassing<a class="headerlink" href="#subclassing" title="Permanent link">🔖</a></h3>
+<p>Blog post by <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span>  <a href="https://hynek.me/articles/python-subclassing-redux/">Hynek Schlawack</a>.</p>
+<h3 id="type-hints">type hints<a class="headerlink" href="#type-hints" title="Permanent link">🔖</a></h3>
+<p>Blog post by <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span>  <a href="https://adamj.eu/tech/2021/05/29/python-type-hints-how-to-use-overload/">Adam Johnson</a>  on how to use the <strong>overload decorator</strong>.</p>
 
 
-              
-            </article>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+              </article>
+            </div>
+
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-        
+
       </main>
-      
-        
-<footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../ubuntu/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Ubuntu
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../network/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Network
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
+
+        <footer class="md-footer">
+
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
-      
+      <div class="md-copyright">
+
+
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+
+</div>
+
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
-    
-    
-      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
-      
-    
+
+
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+
+
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+
+
   </body>
 </html>

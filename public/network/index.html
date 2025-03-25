@@ -2,457 +2,785 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
-    
+
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
-    
-    
-      
-        <title>Network - Softwarre Developemnt Notes</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.6f955dcd.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#00bdd6">
-        
-      
-    
-    
-    
-      
-        
+
+
+
+
+        <link rel="prev" href="../py/">
+
+
+        <link rel="next" href="../fish/">
+
+
+      <link rel="icon" href="../images/ic_reminder_black_18dp.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+
+
+
+        <title>Network - Software Development Notes</title>
+
+
+
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+
+
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-      
-    
-    
-    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+
+
+
       <link rel="stylesheet" href="../css/custom.css">
-    
-    
-      
-    
-    
+
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+
+
+
+
   </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="amber">
-  
-    
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
+
+
+
+
+
+
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="amber">
+
+
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
+
+
         <a href="#dns" class="md-skip">
           Skip to content
         </a>
-      
+
     </div>
     <div data-md-component="announce">
-      
+
     </div>
-    
-      <header class="md-header" data-md-component="header">
+
+
+
+
+
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Softwarre Developemnt Notes" class="md-header__button md-logo" aria-label="Softwarre Developemnt Notes" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+    <a href=".." title="Software Development Notes" class="md-header__button md-logo" aria-label="Software Development Notes" data-md-component="logo">
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25 3c.65 0 1.25.21 1.75.56V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.57c.5-.35 1.1-.57 1.75-.57a3 3 0 0 1 3 3c0 1.58-1.21 2.87-2.75 3h-2v1h1.24l.48.13 4.59 2.29c.82.31 1.22.92 1.22 1.83l-.03.14v.14l-1 6.75c-.06.47-.28.88-.66 1.22-.37.34-.79.5-1.26.5H10c-.55 0-1-.19-1.42-.59L2 15.84l1.05-1.07c.28-.27.64-.43 1.08-.43h.32l4.55.99V9H7a3.02 3.02 0 0 1-2.75-3 3 3 0 0 1 3-3M9 6a1.75 1.75 0 0 0-1.75-1.75A1.75 1.75 0 0 0 5.5 6c0 .88.65 1.61 1.5 1.73v.02h2zm6 1.75v-.01c.85-.12 1.5-.85 1.5-1.74 0-.96-.78-1.74-1.75-1.74S13 5.04 13 6v1.75z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Softwarre Developemnt Notes
+            Software Development Notes
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
-            
+
               Network
-            
+
           </span>
         </div>
       </div>
     </div>
-    
-    
-    
+
+
+
+
+
+
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
   </div>
 </div>
-    
-    
+
+
   </nav>
+
+
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+
+
+
+
+  Overview
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../ubuntu/" class="md-tabs__link">
+
+
+
+
+  Ubuntu
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../git/" class="md-tabs__link">
+
+
+
+
+  Git
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../py/" class="md-tabs__link">
+
+
+
+
+  Python
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+
+
+
+
+  Network
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../fish/" class="md-tabs__link">
+
+
+
+
+  Fish
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../shell/" class="md-tabs__link">
+
+
+
+
+  Shell
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../docker/" class="md-tabs__link">
+
+
+
+
+  Docker
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+    <li class="md-tabs__item">
+      <a href="../apis/" class="md-tabs__link">
+
+
+
+
+  API's
+
+      </a>
+    </li>
+
+
+
+    </ul>
+  </div>
+</nav>
+
+
 </header>
-    
+
     <div class="md-container" data-md-component="container">
-      
-      
-        
-      
+
+
+
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
-          
-            
-              
+
+
+
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Softwarre Developemnt Notes" class="md-nav__button md-logo" aria-label="Softwarre Developemnt Notes" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+    <a href=".." title="Software Development Notes" class="md-nav__button md-logo" aria-label="Software Development Notes" data-md-component="logo">
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25 3c.65 0 1.25.21 1.75.56V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.57c.5-.35 1.1-.57 1.75-.57a3 3 0 0 1 3 3c0 1.58-1.21 2.87-2.75 3h-2v1h1.24l.48.13 4.59 2.29c.82.31 1.22.92 1.22 1.83l-.03.14v.14l-1 6.75c-.06.47-.28.88-.66 1.22-.37.34-.79.5-1.26.5H10c-.55 0-1-.19-1.42-.59L2 15.84l1.05-1.07c.28-.27.64-.43 1.08-.43h.32l4.55.99V9H7a3.02 3.02 0 0 1-2.75-3 3 3 0 0 1 3-3M9 6a1.75 1.75 0 0 0-1.75-1.75A1.75 1.75 0 0 0 5.5 6c0 .88.65 1.61 1.5 1.73v.02h2zm6 1.75v-.01c.85-.12 1.5-.85 1.5-1.74 0-.96-.78-1.74-1.75-1.74S13 5.04 13 6v1.75z"/></svg>
 
     </a>
-    Softwarre Developemnt Notes
+    Software Development Notes
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
 
-  
-  
-  
+  <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Overview
+
+
+  <span class="md-ellipsis">
+    Overview
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href="../ubuntu/" class="md-nav__link">
-        Ubuntu
+
+
+  <span class="md-ellipsis">
+    Ubuntu
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../git.md" class="md-nav__link">
-        Git
+      <a href="../git/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Git
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href="../py/" class="md-nav__link">
-        Python
+
+
+  <span class="md-ellipsis">
+    Python
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-    
-  
-  
+
+
+
+
+
+
+
+
+
     <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
+
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+
+
+
+
+
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Network
+
+
+  <span class="md-ellipsis">
+    Network
+
+  </span>
+
+
           <span class="md-nav__icon md-icon"></span>
         </label>
-      
+
       <a href="./" class="md-nav__link md-nav__link--active">
-        Network
+
+
+  <span class="md-ellipsis">
+    Network
+
+  </span>
+
+
       </a>
-      
-        
+
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
+
+
+
+
+
+
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
+
+        <li class="md-nav__item">
+  <a href="#ubuntudebian-resolvconf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ubuntu/Debian resolv.conf
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#wlan" class="md-nav__link">
+    <span class="md-ellipsis">
+      wlan
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ports
+    </span>
+  </a>
+
+</li>
+
     </ul>
-  
+
 </nav>
-      
+
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
       <a href="../fish/" class="md-nav__link">
-        Fish and Shell
+
+
+  <span class="md-ellipsis">
+    Fish
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../docker.md" class="md-nav__link">
-        Docker
+      <a href="../shell/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Shell
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../mnt.md" class="md-nav__link">
-        Mount
+      <a href="../docker/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    Docker
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
-      
-      
-      
 
-  
-  
-  
+
+
+
+
+
+
+
     <li class="md-nav__item">
-      <a href="../databases.md" class="md-nav__link">
-        Databases
+      <a href="../apis/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+    API's
+
+  </span>
+
+
       </a>
     </li>
-  
 
-    
+
+
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
-            
-            
-              
+
+
+
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
+
+
+
+
+
+
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
+
+        <li class="md-nav__item">
+  <a href="#ubuntudebian-resolvconf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ubuntu/Debian resolv.conf
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#wlan" class="md-nav__link">
+    <span class="md-ellipsis">
+      wlan
+    </span>
+  </a>
+
+</li>
+
+        <li class="md-nav__item">
+  <a href="#ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ports
+    </span>
+  </a>
+
+</li>
+
     </ul>
-  
+
 </nav>
                   </div>
                 </div>
               </div>
-            
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                <h1 id="dns">DNS<a class="headerlink" href="#dns" title="Permanent link">💡</a></h1>
+
+
+
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+
+
+
+
+
+<h1 id="dns">DNS<a class="headerlink" href="#dns" title="Permanent link">🔖</a></h1>
 <p>Resolve domain names, IPv4 and IPv6 addresses, DNS records, and services.</p>
-<div class="highlight"><pre><span></span><code>systemd-resolve --status
+<div class="highlight"><pre><span></span><code>systemd-resolve<span class="w"> </span>--status
 </code></pre></div>
 <p>Show open ports and their processes</p>
-<div class="highlight"><pre><span></span><code>netstat -tulpen
+<div class="highlight"><pre><span></span><code>netstat<span class="w"> </span>-tulpen
 </code></pre></div>
-                
-              
-              
-                
+<h2 id="ubuntudebian-resolvconf">Ubuntu/Debian resolv.conf<a class="headerlink" href="#ubuntudebian-resolvconf" title="Permanent link">🔖</a></h2>
+<p>Add permanent DNS nameservers by extending resolv.conf.</p>
+<p>The resolv.conf file will be overwritten on each boot so you cannnot edit it directly.
+Instead, edit one of the two files that is used to create the resolv.conf file, the head or base file.
+If you want your additional entries to be written to the top of the <code>resolv.conf</code> file, edit the head file.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/resolvconf/resolv.conf.d/head
+</code></pre></div>
+<h2 id="wlan">wlan<a class="headerlink" href="#wlan" title="Permanent link">🔖</a></h2>
+<p>Get the name of the wlan you're connected to.</p>
+<div class="highlight"><pre><span></span><code>iwgetid<span class="w"> </span>-r
+</code></pre></div>
+<h2 id="ports">Ports<a class="headerlink" href="#ports" title="Permanent link">🔖</a></h2>
+<p>Find listening ports on local machine</p>
+<div class="highlight"><pre><span></span><code>lsof<span class="w"> </span>-i<span class="w"> </span>-P<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>LISTEN
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-i</td>
+<td>select IPv[46] files</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>no port names</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>no host names</td>
+</tr>
+</tbody>
+</table>
 
 
-              
-            </article>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+              </article>
+            </div>
+
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-        
+
       </main>
-      
-        
-<footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../py/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Python
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../fish/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Fish and Shell
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
+
+        <footer class="md-footer">
+
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
-      
+      <div class="md-copyright">
+
+
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+
+</div>
+
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
-    
-    
-      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
-      
-    
+
+
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+
+
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+
+
   </body>
 </html>
